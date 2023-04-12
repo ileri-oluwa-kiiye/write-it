@@ -147,7 +147,32 @@ header img.profile_img:hover{
 /* End of the styling of the header section  */
 
 
+.hidden_desktop{
+    display: none !important;
+}
 
+
+/* The mobile nav part  */
+header nav {
+    position: fixed;
+    width: 100%;
+    background-color: #364153;
+    bottom: 0px;
+    background-color:  rgb(17,23, 41);
+    display: flex;
+    padding: 15px 0px;
+    justify-content: space-evenly;
+    border-top: 1px solid rgb(32,41, 58);
+    align-items: center;
+}
+
+header nav .write{
+    background-color: #3762e3;
+    padding: 6px 6px;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+}
 
 
 
@@ -429,7 +454,7 @@ section.keys li p{
 
     h1{
         font-size: 28px;
-        color: #3762e3;
+        /* color: #3762e3; */
     }
 
     .icons img{
@@ -485,14 +510,16 @@ section.keys li p{
     }
     
 
-    
+    header nav{
+        display: flex;
+    }
     
 
 
     main section.right{
         width: 100%;
         /* min-width: 100%; */
-        max-width: calc(100% - 20px);
+        max-width: calc(100% - 30px);
         /* display: none; */
     }
 
@@ -511,6 +538,11 @@ section.keys li p{
         display: flex;
         align-items: center;
         width: 60px;
+    }
+
+
+    .hidden_desktop{
+        display: flex !important;
     }
     
     .post .engagements img{
