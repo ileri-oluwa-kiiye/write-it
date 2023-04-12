@@ -1,0 +1,368 @@
+/* Reamoving all the default spacing  */
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Maintaining a black background at the base  */
+body, .allcontent{
+    background-color: rgb(246, 248, 250);
+    background-color: black;
+    min-height: 100vh;
+}
+
+/* maintaining a maximum width of 1440px no matter the screen size  */
+.ctrlwidth{
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* I initially wanted to be able to change modes, but then, this is the dark mode we're maintaining  */
+.allcontent .mode{
+    background-color: rgb(17,23, 41);
+    border: 1px solid rgb(32,41, 58);
+    color: rgb(210, 216, 223);
+    color: white;
+}
+
+
+
+
+
+/* The styling for the header section  */
+header .ctrlwidth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+    background-color: inherit;
+    color: inherit;
+}
+
+header .search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 610px;
+    max-width: 50vw;
+    padding: 1px 20px;
+    border-radius: 999px;
+    border: 1px solid rgb(152, 162, 182);
+}
+
+header .search:hover{
+    border: 1px solid rgb(55, 98, 227);
+}
+
+header .search input{
+    border: none;
+    width: 96%;
+    padding: 10px;
+    color: rgb(152, 162, 182);
+    outline: none;
+    background-color: inherit;
+    font-size: 15px;
+}
+
+.search ::placeholder{
+    color: inherit;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+}
+
+.logo{
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.icons button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3762e3;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    margin-right: 40px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    border-radius: 999px;
+}
+
+.icons button:hover{
+    background-color: rgb(76,126,237);
+}
+
+.icons img{
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.icons img:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.303);
+}
+
+.icons button img{
+    padding: 0px;
+}
+.icons button img:hover{
+    background-color: inherit;
+
+}
+/* End of the styling of the header section  */
+
+
+
+
+
+
+
+
+
+/* The styling of the main section, where all the content of the page stays  */
+main{
+    margin: 10px 0px;
+}
+
+
+
+
+main.flex{
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+main .mode{
+    margin: 15px 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+
+main section{
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+}
+
+.allcontent main aside{
+    min-width: 100px;
+    width: 300px;
+    max-width: 20vw;
+    height: fit-content;
+}
+
+/* main aside.static{
+    position: sticky !important;
+    top: 0px;
+} */
+
+
+
+
+
+/* The explore section of the main part  */
+
+main .explore{
+    position: sticky;
+    padding: 0%;
+    /* padding-top: 10px; */
+    top: 0px;
+}
+
+
+.explore li{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    font-weight: 700;
+    /* background-color: red; */
+    padding: 5px 5%;
+    margin: 5px 0px;
+}
+
+.explore li:hover{
+    background-color: rgba(54, 65, 83);
+}
+
+.explore .active{
+    padding: 7px 4.5%;
+    color: #3762e3;
+    border-right: 2px solid #3762e3;
+}
+
+.explore li img{
+    margin: 1px 20px 1px 6px;
+    width: 25px;
+    height: 25px;
+}
+
+.explore footer{
+    padding: 5%;
+}
+
+.explore footer div.hr{
+    width: 100px;
+    background-color: #364153;
+    margin: 40px 0px;
+    height: 1px;
+    margin-top: 70px;
+}
+
+.explore footer p{
+    font-size: 13px;
+    padding: 5px;
+}
+
+
+
+
+/* The heading of the main part  */
+main .heading{
+    padding: 50px ;
+}
+
+main .heading h1{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+main .heading p{
+    padding-top: 10px;
+}
+
+
+
+
+
+
+/* The section by the right  */
+
+main section.right{
+    width: 27vw;
+    max-width: 300px;
+    height: fit-content;
+}
+
+section.right p{
+    margin: 5px 0px;
+    font-size: 15px;
+}
+
+section.right h2{
+    color: #3762e3;
+}
+
+
+
+/* The list conyaining the keys to why this site was built  */
+
+section.keys h2{
+    color: white;
+    margin-top: 30px;
+}
+
+section.keys li{
+    border-top: 1px solid #364153 ;
+    text-align: left;
+    margin: 10px 5px;
+    padding: 15px 2px 0px;
+}
+
+section.keys li h2{
+    color: #3762e3;
+    font-size: 19px;
+    margin-top: 0px;
+}
+
+section.keys li p{
+    line-height: 25px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+@media screen and (max-width:1000px){
+    *{
+        font-size: 14px;
+    }
+
+    section h2{
+        font-size: 23px;
+    }
+
+    h1{
+        font-size: 28px;
+        color: #3762e3;
+    }
+
+    .icons img{
+        width: 20px;
+    }
+
+    .icons{
+        max-width: 70px;
+    }
+
+    .icons button{
+        font-size: 13px;
+        padding: 5px 10px;
+        width: 100px;
+    }
+
+    .icons button img{
+        margin-right: 10px;
+    }
+    aside{
+        display: none;
+    }
+
+    .hidden_mobile{
+        display: none !important;
+    }
+
+    main .mode{
+        padding: 50px 10px;
+    }
+
+    header h2{
+        font-size: 23px;
+    }
+
+
+    main section.right{
+        width: max-content;
+        /* min-width: 100%; */
+        max-width: calc(100% - 40px);
+        /* display: none; */
+    }
+
+
+main.flex{
+    display: block;
+    /* justify-content: space-around; */
+}
+}
