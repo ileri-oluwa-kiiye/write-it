@@ -49,6 +49,24 @@ header .ctrlwidth{
     color: inherit;
 }
 
+header .logo{
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+header .logo .hidden_desktop img{
+    width: 20px;
+    /* height: 40px; */
+    margin-right: 10px;
+}
+
 header .search{
     display: flex;
     justify-content: space-between;
@@ -152,16 +170,18 @@ header img.profile_img:hover{
 }
 
 
+
+
 /* The mobile nav part  */
 header nav {
     position: fixed;
-    width: 100%;
+    width: calc(100% - 60px);
     background-color: #364153;
     bottom: 0px;
     background-color:  rgb(17,23, 41);
     display: flex;
-    padding: 15px 0px;
-    justify-content: space-evenly;
+    padding: 17px 30px;
+    justify-content: space-between;
     border-top: 1px solid rgb(32,41, 58);
     align-items: center;
 }
@@ -377,7 +397,7 @@ section.keys li p{
 
 .allposts h2{
     color: #3762e3;
-    padding: 30px;
+    padding: 10px;
 }
 .posts .post h2{
     color: #3762e3;
@@ -434,7 +454,7 @@ section.keys li p{
 
 @media screen and (max-width:1000px){
     *{
-        font-size: 14px;
+        font-size: 15px;
     }
 
     header img.profile_img{
