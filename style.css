@@ -74,6 +74,16 @@ header .search input{
     font-size: 15px;
 }
 
+header img.profile_img{
+    border-radius: 555px;
+    width: 40px;
+    height: 40px;
+}
+
+header img.profile_img:hover{
+    background-color: inherit;
+}
+
 .search ::placeholder{
     color: inherit;
 }
@@ -105,11 +115,17 @@ header .search input{
     border: none;
     font-size: 16px;
     border-radius: 999px;
+    transition: all 0.2s ease;
 }
 
 .icons button:hover{
     background-color: rgb(76,126,237);
 }
+
+.icons button:active{
+    background-color: rgb(52, 79, 137);
+}
+
 
 .icons img{
     padding: 5px;
@@ -203,6 +219,7 @@ main .explore{
 
 .explore li:hover{
     background-color: rgba(54, 65, 83);
+    transition: all 0.3s ease;
 }
 
 .explore .active{
@@ -259,7 +276,7 @@ main .heading p{
 /* The section by the right  */
 
 main section.right{
-    width: 27vw;
+    width: 22vw;
     max-width: 300px;
     height: fit-content;
 }
@@ -304,10 +321,106 @@ section.keys li p{
 
 
 
+/* Posts on the explore page  */
+.posts .post{
+    background-color: red;
+    text-align: left;
+    display: flex;
+    border-radius: 10px;
+    background-color: #20293a;
+    align-items: flex-start;
+    margin: 20px 0px;
+    padding: 20px 12px;
+}
+
+
+.posts .post img{
+    width: 100px;
+    border-radius: 555px;
+    margin-right: 30px;
+}
+
+
+
+.posts .post p{
+    margin: 10px 0px;
+    font-style: italic;
+    max-height: 130px;
+    overflow: hidden;
+    /* color: #3762e3; */
+}
+
+.allposts h2{
+    color: #3762e3;
+    padding: 30px;
+}
+.posts .post h2{
+    color: #3762e3;
+    padding: 0%;
+    /* font-style: italic; */
+}
+
+.post .engagements{
+    display: flex;
+    width: fit-content;
+}
+
+.post .engagements div{
+    display: flex;
+    align-items: center;
+    width: 60px;
+}
+
+.post .engagements img{
+    padding: 5px;
+    margin-right: 0px;
+    width: 25px;
+}
+
+.posts button{
+    background-color: #3762e3;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 15px;
+    margin-top: 20px;
+    margin-bottom: 2vh;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.posts button:hover{
+    background-color: rgb(76,126,237);
+}
+
+.posts button:active{
+    background-color: rgb(52, 79, 137);
+}
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:1000px){
     *{
         font-size: 14px;
+    }
+
+    header img.profile_img{
+        border-radius: 555px;
+        width: 40px;
+        margin-left: 10px;
+        height: 40px;
+    }
+    
+    header .ctrlwidth{
+        padding: 10px 3px;
     }
 
     section h2{
@@ -324,18 +437,20 @@ section.keys li p{
     }
 
     .icons{
-        max-width: 70px;
+        max-width: min-content;
     }
 
     .icons button{
         font-size: 13px;
-        padding: 5px 10px;
+        /* padding: 8px 14px 8px 10px;c */
         width: 100px;
-    }
-
-    .icons button img{
         margin-right: 10px;
     }
+
+    /* .icons button img{
+        margin-right: 10px;
+    } */
+    
     aside{
         display: none;
     }
@@ -346,6 +461,7 @@ section.keys li p{
 
     main .mode{
         padding: 50px 10px;
+        margin: 10px 0px;
     }
 
     header h2{
@@ -353,16 +469,53 @@ section.keys li p{
     }
 
 
+    main .mode{
+        margin: 15px 0px;
+    }
+
+    .posts .post img{
+        width: 70px;
+        border-radius: 555px;
+        margin-right: 20px;
+    }
+
+    .posts .post p{
+        line-height: 25px;
+        font-size: 13px;
+    }
+    
+
+    
+    
+
+
     main section.right{
-        width: max-content;
+        width: 100%;
         /* min-width: 100%; */
-        max-width: calc(100% - 40px);
+        max-width: calc(100% - 20px);
         /* display: none; */
     }
 
+    section.right p{
+        margin: 5px 10px;
+        font-size: 15px;
+    }
+    
 
-main.flex{
-    display: block;
-    /* justify-content: space-around; */
-}
+    main.flex{
+        display: block;
+        /* justify-content: space-around; */
+    }
+    
+    .post .engagements div{
+        display: flex;
+        align-items: center;
+        width: 60px;
+    }
+    
+    .post .engagements img{
+        padding: 5px;
+        margin-right: 0px;
+        width: 25px;
+    }
 }
