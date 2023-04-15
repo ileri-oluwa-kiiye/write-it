@@ -8,7 +8,7 @@
     <meta name="author" content="Ilerioluwakiiye">
     <title>Write-It Initative</title>
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="icon" type="image/x-icon" href="img/lets.svg">
+    <link rel="icon" type="image/x-icon" href="img/write.svg">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxanium">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
@@ -17,11 +17,14 @@
             <div class="mode">
 
                 <!-- This is the header section that contains all of the navigations  -->
+                <!-- <nav class="nav">
+                    This navigation, we'll work on it
+                </nav> -->
                 <header>
                     <div class="ctrlwidth">
                         <div class="logo">
                             <div class="hidden_desktop">
-                                <img src="img/hamburger.svg" alt="">
+                                <img src="img/hamburger.svg" alt="" style="cursor: pointer;" id="open-nav">
                             </div>
                             <img src="img/fav.png" alt="">
                             <h2>Write-It</h2>
@@ -41,20 +44,20 @@
                             <img src="img/profile3.png" alt="" class="profile_img">
                         </div> 
                     </div>
-                    <nav class="nav hidden_desktop">
+                    <nav class="hidden_desktop">
                         <a href="./branches/blog.html">
                             <li><img src="img/blog.svg" alt=""></li>
                         </a>
-                        <a href="">
+                        <a href="./branches/signup.html">
                             <li><img src="img/search.svg" alt="Search"></li>
                         </a>
-                        <a href="">
+                        <a href="./branches/write.html">
                             <li class="write"><img src="img/write.svg" alt=""></li>
                         </a>
                         <a href="">
-                            <li><img src="img/updates.svg" alt=""></li>
+                            <li onclick="alert('No available updates')"><img src="img/updates.svg" alt=""></li>
                         </a>
-                        <a href="">
+                        <a href="./branches/signup.html">
                             <li><img src="img/notification.svg" alt=""></li>
                         </a>
                     </nav>
@@ -78,20 +81,20 @@
                                 <p>Blogs</p>
                             </li>
                         </a>
-                        <a href="">
+                        <a href="./branches/write.html">
                             <li>
                                 <img src="img/write.svg" alt="">
                                 <p>Write</p>
                             </li>
                         </a>
                         <!-- <br><br> -->
-                        <a href="">
+                        <a href="./branches/login.html">
                             <li>
                                 <img src="img/login.svg" alt="">
                                 <p>Login</p>
                             </li>
                         </a>
-                        <a href="">
+                        <a href="./branches/signup.html">
                             <li>
                                 <img src="img/login.svg" alt="">
                                 <p>Sign-Up</p>
@@ -181,23 +184,6 @@
                                             </div>
                                             <div class="comments">
                                                 <img src="img/comment.svg" alt=""> <span>32</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="post">
-                                    <img src="img/profile3.png" alt="Photo">
-                                    <div>
-                                        <h2>Another Title</h2>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ea nesciunt recusandae, eius sint voluptates temporibus excepturi. Illo, mollitia deleniti quia incidunt consequatur ex veritatis magnam soluta saepe atque eius? Vel, magnam quod. Aspernatur, delectus!
-                                        </p>
-                                        <div class="engagements">
-                                            <div class="likes">
-                                                <img src="img/like.svg" alt=""> <span>0</span>
-                                            </div>
-                                            <div class="comments">
-                                                <img src="img/comment.svg" alt=""> <span>0</span>
                                             </div>
                                         </div>
                                     </div>

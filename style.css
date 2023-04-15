@@ -229,7 +229,14 @@ main section{
 .allcontent main aside{
     min-width: 100px;
     width: 300px;
-    max-width: 20vw;
+    max-width: 15vw;
+    height: fit-content;
+}
+
+.allcontent main .explore{
+    min-width: 100px;
+    width: 300px;
+    max-width: 180px;
     height: fit-content;
 }
 
@@ -446,9 +453,123 @@ section.keys li p{
 
 
 
+nav.nav{
+    position: fixed;
+    display: flex;
+    z-index: 1000;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    background-color: #00000066;
+    height: 100vh;
+}
 
 
 
+
+
+/* Styling for the login page  */
+.login h1{
+    padding: 10px;
+}
+/* 
+.login form{
+    height: 400px;
+} */
+
+.login form{
+    text-align: left;
+    background-color: #364153;
+    max-width: 600px;
+    margin: 5vh auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.login label{
+    width: 400px;
+    /* background-color: red; */
+    min-width: 400px;
+}
+
+/* .login form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.login input{
+    display: block;
+    outline: none;
+    width: 90%;
+    border: none;
+    border-radius: 66px;
+    background-color: rgba(255, 255, 255, 0.838);
+    padding: 6px 15px;
+    margin-bottom: 12px;
+}
+
+
+
+.login button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3762e3;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin: 10px auto;
+    font-size: 16px;
+    border-radius: 999px;
+    transition: all 0.2s ease;
+    margin-top: 40px;
+}
+
+
+
+form.write{
+    min-width: 95%;
+    padding: 2%;
+}
+
+form.write ::placeholder{
+    color: white;
+}
+
+form.write input{
+    background-color: inherit;
+    padding: 10px 0px;
+    color: white;
+}
+
+form.write textarea{
+    background-color: inherit;
+    border: 1px solid rgb(32,41, 58);
+    outline: none;
+    width: 93%;
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    min-height: 60vh;
+    color: white;
+}
+
+form.write input.title{
+    font-size: 1.5rem;
+    /* border-bottom: 1px solid rgb(32,41, 58); */
+    border-radius: 0px;
+    width: fit-content;
+    font-family: cursive !important;
+    min-width: 70%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 
 
 
@@ -539,7 +660,7 @@ section.keys li p{
     main section.right{
         width: 100%;
         /* min-width: 100%; */
-        max-width: calc(100% - 30px);
+        max-width: calc(100% - 23px);
         /* display: none; */
     }
 
@@ -547,7 +668,7 @@ section.keys li p{
         margin: 5px 10px;
         font-size: 15px;
     }
-    
+
 
     main.flex{
         display: block;
@@ -570,4 +691,34 @@ section.keys li p{
         margin-right: 0px;
         width: 25px;
     }
+
+    .login h1{
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .login .mode{
+        padding: 20px  10px;
+    }
+
+    .login input{
+        display: block;
+        outline: none;
+        width: 90%;
+        border: none;
+        border-radius: 66px;
+        background-color: rgba(255, 255, 255, 0.838);
+        padding: 6px 15px;
+        margin-bottom: 12px;
+    }
+
+        
+    div div form.write{
+        /* width: 60%; */
+        /* max-width: 40vw; */
+        min-width: 100px;
+        
+       
+    }
+
 }

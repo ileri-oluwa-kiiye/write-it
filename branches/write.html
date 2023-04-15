@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta charset="UTF-8">
+    <meta name="desciption" content="">
+    <meta name="author" content="Ilerioluwakiiye">
+    <title>Write-It  Blog</title>
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oxanium">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="allcontent">
+            <div class="mode">
+
+                <!-- This is the header section that contains all of the navigations  -->
+                <header>
+                    <div class="ctrlwidth">
+                        <div class="logo">
+                            <div class="hidden_desktop">
+                                <img src="../img/hamburger.svg" alt="">
+                            </div>
+                            <img src="../img/fav.png" alt="">
+                            <h2>Write-It</h2>
+                        </div>
+                        <div class="search hidden_mobile">
+                            <img src="../img/search.svg" alt="Search">
+                            <input type="text" placeholder="Search Write-it">
+                        </div>
+                        <div class="icons">
+                            <button class="hidden_mobile">
+                                <img src="../img/write.svg" alt="">
+                                Write
+                            </button>
+                            <img src="../img/updates.svg" alt="">
+                            <img src="../img/notification.svg" alt=""  class="hidden_mobile">
+                            <!-- <img src="../img/lightmode.svg" alt=""  class="hidden_mobile"> -->
+                            <img src="../img/profile3.png" alt="" class="profile_img">
+                        </div> 
+                    </div>
+                    <nav class="hidden_desktop">
+                        <a href="./blog.html">
+                            <li><img src="../img/blog.svg" alt=""></li>
+                        </a>
+                        <a href="../index.html">
+                            <li><img src="../img/search.svg" alt="Search"></li>
+                        </a>
+                        <a href="">
+                            <li class="write"><img src="../img/write.svg" alt=""></li>
+                        </a>
+                        <a href="">
+                            <li onclick="alert('No available updates')"><img src="../img/updates.svg" alt=""></li>
+                        </a>
+                        <a href="./login.html">
+                            <li><img src="../img/notification.svg" alt=""></li>
+                        </a>
+                    </nav>
+                </header>
+            </div>
+
+        <div class="ctrlwidth">
+            <main class="flex">
+                <aside class="explore mode">
+                    <!-- The list below is for the navigation for desktop. More or less the sidebar  -->
+                    <ul>
+                        <a href="../index.html">
+                            <li>
+                                <img src="../img/explore.svg" alt="">
+                                <p>Explore</p>
+                            </li>
+                        </a>
+                        <a href="./blog.html">
+                            <li>
+                                <img src="../img/blog.svg" alt="">
+                                <p>Blogs</p>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="active">
+                                <img src="../img/write.svg" alt="">
+                                <p>Write</p>
+                            </li>
+                        </a>
+                        <!-- <br><br> -->
+                        <a href="./login.html">
+                            <li>
+                                <img src="../img/login.svg" alt="">
+                                <p>Login</p>
+                            </li>
+                        </a>
+                        <a href="./signup.html">
+                            <li>
+                                <img src="../img/login.svg" alt="">
+                                <p>Sign-Up</p>
+                            </li>
+                        </a>
+                    </ul>
+                    <footer>
+                        <div class="hr"></div>
+                        <p>&copy; 2023 Write It</p>
+                    </footer>
+                </aside> 
+                <section class="login">
+                    <div class="mode">
+                        <h1>Express Yourself</h1>
+                        <p>Overcome by the words of your testimony!</p>
+                    </div>
+
+                    <div class="mode">
+                        <form action="./blog.html" class="write">
+                            <input type="text" name="title" class="title" placeholder="*Add a Title Here..">
+                            <div>
+                                <span>*Add a cover image</span>
+                                <input type="file" name="backdrop" id="">
+                            </div>
+                            <textarea name="blog" placeholder="*Write-It here ..."></textarea>
+                            <button>Publish</button>
+                        </form>
+                    </div>
+                   
+                </section>
+                <div>
+                    <br><br><br>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
